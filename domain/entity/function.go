@@ -10,6 +10,6 @@ type Function struct {
 	Location vo.Position `json:"location"`
 }
 
-func (f *Function) getFunc() string {
+func (f *Function) GetFunction() string {
 	return ""
 }

@@ -7,12 +7,33 @@ import (
 	"shareus.cn/infrastructure-mongo/repositoryImpl"
 )
 
-func Save(username string, password string) {
+var userRepositoryDomain repository.UserRepository
+
+func init() {
 	impl := repositoryImpl.NewUserRepositoryImplInstance()
-	var userRepositoryDomain repository.UserRepository = impl
+	userRepositoryDomain = impl
+}
+
+func Save(username string, password string) {
 	userRepositoryDomain.Add(entity.User{
-		ID:       uuid.UUID{},
+		ID:       uuid.New(),
 		Username: username,
 		Password: password,
 	})
+}
+
+func Update(id uuid.UUID, username string, password string) {
+	userRepositoryDomain.Update(entity.User{
+		ID:       id,
+		Username: username,
+		Password: password,
+	})
+}
+
+func Delete(id string) {
+	userRepositoryDomain.Delete(id)
+}
+
+func Get(username string, password string) {
+	userRepositoryDomain.Get()
 }

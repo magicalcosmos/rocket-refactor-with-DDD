@@ -6,6 +6,12 @@ import (
 )
 
 func SetupRouter(r *gin.Engine) {
-	r.GET("/", c.Index)
-	r.GET("/health", c.Health)
+	// 用户信息
+	p := r.Group("/user")
+	{
+		p.POST("/add", c.AddUser)
+		p.PUT("/:id/update", c.UpdateUser)
+		p.DELETE("/:id/delete", c.DeleteUser)
+		p.GET("/get", c.GetUser)
+	}
 }

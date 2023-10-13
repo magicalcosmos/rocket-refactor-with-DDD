@@ -6,7 +6,7 @@ import (
 
 type UserRepository interface {
 	Add(entity.User) error
-	Update() error
-	Delete() error
+	Update(entity.User) error
+	Delete(id string) error
 	Get() error
 }

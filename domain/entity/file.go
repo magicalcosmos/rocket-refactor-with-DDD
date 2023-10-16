@@ -16,6 +16,10 @@ type File struct {
 	CreateUser User      `json:"create_user"`
 }
 
+func (f *File) uploadFiles(file *File) bool {
+	return true
+}
+
 func (f *File) ReplaceFiles(file *File) bool {
 	return true
 }

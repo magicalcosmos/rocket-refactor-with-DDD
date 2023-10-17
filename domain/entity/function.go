@@ -6,8 +6,8 @@ import (
 )
 
 type Function struct {
-	ID       uuid.UUID   `json:"id"`
-	Location vo.Position `json:"location"`
+	ID       uuid.UUID   
+	Location vo.Position 
 }
 
 func (f *Function) GetFunctionList() string {

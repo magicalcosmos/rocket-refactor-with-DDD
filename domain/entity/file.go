@@ -7,13 +7,13 @@ import (
 )
 
 type File struct {
-	ID         uuid.UUID `json:"id"`
-	FileName   string    `json:"file_name"`
-	FilePath   string    `json:"file_path"`
-	Status     bool      `json:"status"`
-	CreateTime time.Time `json:"create_time"`
-	UpdateTime time.Time `json:"update_time"`
-	CreateUser User      `json:"create_user"`
+	ID         uuid.UUID 
+	FileName   string   
+	FilePath   string  
+	Status     bool   
+	CreateTime time.Time 
+	UpdateTime time.Time
+	CreateUser User    
 }
 
 func (f *File) uploadFiles(file *File) bool {

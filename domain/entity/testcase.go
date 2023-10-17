@@ -7,11 +7,11 @@ import (
 )
 
 type TestCase struct {
-	ID           uuid.UUID `json:"id"`
-	TestCaseName string    `json:"test_case_name"`
-	CreateTime   time.Time `json:"create_time"`
-	UpdateTime   time.Time `json:"update_time"`
-	Status       bool      `json:"status"`
+	ID           uuid.UUID 
+	TestCaseName string    
+	CreateTime   time.Time 
+	UpdateTime   time.Time 
+	Status       bool     
 }
 
 func (c *TestCase) DeleteTestCase(id int64) bool {

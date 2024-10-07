@@ -2,7 +2,7 @@ package router
 
 import (
 	"github.com/gin-gonic/gin"
-	c "shareus.cn/restapi/controller"
+	c "github.com/magicalcosmos/rocket/interfaces/restapi/controller"
 )
 
 func SetupRouter(r *gin.Engine) {
@@ -17,7 +17,7 @@ func SetupRouter(r *gin.Engine) {
 
 
 	// 文件信息
-	p := r.Group("/user")
+	p = r.Group("/file")
 	{
 		p.POST("/add", c.AddUser)
 		p.PUT("/:id/update", c.UpdateUser)

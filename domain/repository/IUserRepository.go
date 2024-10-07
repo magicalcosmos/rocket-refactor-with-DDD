@@ -1,10 +1,10 @@
-package repository
+package domain
 
 import (
-	"shareus.cn/domain/entity"
+	"github.com/magicalcosmos/rocket/domain/entity"
 )
 
-type UserRepository interface {
+type IUserRepository interface {
 	Add(entity.User) error
 	Update(entity.User) error
 	Delete(id string) error

@@ -1,3 +1,3 @@
-module shareus.cn/application
+module github.com/magicalcosmos/rocket/application
 
-go 1.20
+go 1.23

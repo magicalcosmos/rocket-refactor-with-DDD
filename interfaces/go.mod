@@ -1,6 +1,6 @@
-module shareus.cn/restapi
+module github.com/magicalcosmos/rocket/interfaces
 
-go 1.20
+go 1.23
 
 require github.com/gin-gonic/gin v1.9.1
 

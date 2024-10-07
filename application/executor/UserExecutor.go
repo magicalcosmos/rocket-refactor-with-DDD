@@ -2,9 +2,9 @@ package executor
 
 import (
 	"github.com/google/uuid"
-	"shareus.cn/domain/entity"
-	"shareus.cn/domain/repository"
-	"shareus.cn/infrastructure-mongo/repositoryImpl"
+	"github.com/magicalcosmos/rocket/domain/entity"
+	"github.com/magicalcosmos/rocket/domain/repository"
+	"github.com/magicalcosmos/rocket/infrastructure-mongo/repositoryImpl"
 )
 
 var userRepositoryDomain repository.UserRepository

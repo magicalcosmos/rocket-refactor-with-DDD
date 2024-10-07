@@ -1,2 +1,7 @@
 .history
 **/*/go.sum
+**/*/*work.sum
+*work.sum
+.vscode
+.DS_Store
+**/*/.DS_Store

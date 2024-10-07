@@ -2,7 +2,7 @@ package entity
 
 import (
 	"github.com/google/uuid"
-	"shareus.cn/domain/vo"
+	"github.com/magicalcosmos/rocket/domain/vo"
 )
 
 type Function struct {

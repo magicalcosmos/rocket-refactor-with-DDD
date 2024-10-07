@@ -1,18 +1,18 @@
-package repositoryImpl
+package infrastructure
 
 import (
 	"fmt"
 	"sync"
 
-	"shareus.cn/domain/entity"
-	r "shareus.cn/domain/repository"
+	"github.com/magicalcosmos/rocket/domain/entity"
+	r "github.com/magicalcosmos/rocket/domain/repository"
 )
 
 type userRepositoryImpl struct {
 	sync.Mutex
 }
 
-func NewUserRepositoryImplInstance() r.UserRepository {
+func NewUserRepositoryImplInstance() r.IUserRepository {
 	return &userRepositoryImpl{}
 }
 

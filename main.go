@@ -2,8 +2,9 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	r "shareus.cn/restapi/router"
-	"shareus.cn/restapi/utils"
+	r "github.com/magicalcosmos/rocket/interfaces/restapi/router"
+
+	"github.com/magicalcosmos/rocket/interfaces/restapi/utils"
 )
 
 func main() {
